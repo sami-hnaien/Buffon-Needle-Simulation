@@ -6,13 +6,8 @@
 
 ## Buffon's Needle: Estimating Pi using Monte Carlo
 
-
-
 **Author:** Sami HNAIEN  
-
 **Course:** Statistical Theory - University of Milan (UNIMI)
-
-
 
 This project explores the **Buffon's Needle problem**, a classic probability experiment used to estimate the value of **π** through simulation.
 
@@ -25,11 +20,7 @@ The goal is to demonstrate the **Law of Large Numbers** by simulating the drop o
 
 ---
 
-
-
 ## Project Structure
-
-
 
 ```
 .
@@ -38,8 +29,8 @@ The goal is to demonstrate the **Law of Large Numbers** by simulating the drop o
 ├── docs
 │   └── presentation.pdf         # Project presentation 
 └── plots
-     ├── cumulative\\\_pi.png        # Convergence plot (Red line)
-     └── estimate\\\_histograms.png  # Variance\Sampling distribution
+     ├── cumulative_pi.png        # Convergence plot (Red line)
+     └── estimate_histograms.png  # Variance\Sampling distribution
 ```
 
 ---
@@ -58,35 +49,32 @@ The goal is to demonstrate the **Law of Large Numbers** by simulating the drop o
 
 
 
-\*\*1. Convergence toward $\\\\pi$\*\*
+**1. Convergence toward π**
 
 
-The red line shows the cumulative estimate of $\\\\pi$. As the number of trials ($M$) increases, the estimate converges and stabilizes around the real value of 3.14159 .
+The red line shows the cumulative estimate of $pi$. As the number of trials ($M$) increases, the estimate converges and stabilizes around the real value of 3.14159 .
 
-!\[Convergence](plots/convergence\_plot.png)
-
-
-\*\*2. Variability Analysis\*\*
-
-These histograms compare different sample sizes. As $M$ grows (from Blue to Green), the distribution becomes narrower, showing that larger samples significantly reduce estimation error ].
+![Convergence](plots/convergence_plot.png)
 
 
-!\[Variability](plots/estimate\_histograms.png)
+**2. Variability Analysis**
 
-\## Tech Stack
-
-
-&#x20; \*\*Language\*\*: R
+These histograms compare different sample sizes. As $M$ grows (from Blue to Green), the distribution becomes narrower, showing that larger samples significantly reduce estimation error.
 
 
-&#x20; \*\*Libraries\*\*: Base R (stats \\\& graphics)
+![Variability](plots/estimate_histograms.png)
+
+## Tech Stack
 
 
+**Language**: R
 
-&#x20; \*\*Concepts\*\*: Monte Carlo Methods, Geometric Probability, Law of Large Numbers.
+**Libraries**: Base R (stats & graphics)
+
+**Concepts**: Monte Carlo Methods, Geometric Probability, Law of Large Numbers.
 
 
-\---
+---
 
 
-\*\*Contact:\*\* \[samihnaien57@gmail.com]
+**Contact:** [samihnaien57@gmail.com]
