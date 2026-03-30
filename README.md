@@ -1,149 +1,82 @@
-!\[maintainer](https://img.shields.io/badge/UniMi-blue)
+![maintainer](https://img.shields.io/badge/UniMi-blue)
 
-!\[Academic project](https://img.shields.io/badge/Academic-Project-orange)
-
-
-
-\# Buffon's Needle: Estimating Pi using Monte Carlo
+![Academic project](https://img.shields.io/badge/Academic-Project-orange)
 
 
 
-\*\*Author:\*\* Sami HNAIEN  
-
-\*\*Course:\*\* Statistical Theory - University of Milan (UNIMI)
+## Buffon's Needle: Estimating Pi using Monte Carlo
 
 
 
-This project explores the \*\*Buffon's Needle problem\*\*, a classic probability experiment used to estimate the value of \*\*π\*\* through simulation.
+**Author:** Sami HNAIEN  
+
+**Course:** Statistical Theory - University of Milan (UNIMI)
 
 
 
+This project explores the **Buffon's Needle problem**, a classic probability experiment used to estimate the value of **π** through simulation.
+
+
+## Objective
+
+
+The goal is to demonstrate the **Law of Large Numbers** by simulating the drop of a needle on a floor with parallel lines and observing how the estimate stabilizes over time.
+
+
+---
 
 
 
-
-\## Objective
-
-
-
-The goal is to demonstrate the \*\*Law of Large Numbers\*\* by simulating the drop of a needle on a floor with parallel lines and observing how the estimate stabilizes over time.
-
-
-
-\---
-
-
-
-\## Project Structure
+## Project Structure
 
 
 
 ```
-
 .
-
 ├── code
-
-│   └── buffon\\\_simulation.R      # Main simulation script (R)
-
-
-
+│   └── buffon_simulation.R      # Main simulation script (R)
 ├── docs
-
-│   └── presentation.pdf         # Project presentation - Score: 8.5/10
-
-
-
+│   └── presentation.pdf         # Project presentation 
 └── plots
-
-&#x20;   ├── cumulative\\\_pi.png        # Convergence plot (Red line)
-
-&#x20;   └── estimate\\\_histograms.png  # Variance \\\& Sampling distribution
-
-
-
+     ├── cumulative\\\_pi.png        # Convergence plot (Red line)
+     └── estimate\\\_histograms.png  # Variance\Sampling distribution
 ```
 
+---
+
+## Methodology
 
 
-\---
+**Trials (M)**: 20,000 repetitions.
+
+**Formula**: $\pi \approx \frac{2L}{dP}$.
+
+**Crossing Condition**: A "hit" is recorded if $Y \leq \frac{L}{2} \sin(\theta)$.
 
 
-
-
-
-
-
-\##  Methodology
-
-
-
-\*\*Trials (M)\*\*: 20,000 repetitions.
-
-
-
-\*\*Formula\*\*: $\\\\pi \\\\approx \\\\frac{2L}{dP}$.
-
-
-
-\*\*Crossing Condition\*\*: A "hit" is recorded if $Y \\\\leq \\\\frac{L}{2} \\\\sin(\\\\theta)$.
-
-
-
-
-
-
-
-\## Visualizations
+## Visualizations
 
 
 
 \*\*1. Convergence toward $\\\\pi$\*\*
 
 
-
 The red line shows the cumulative estimate of $\\\\pi$. As the number of trials ($M$) increases, the estimate converges and stabilizes around the real value of 3.14159 .
-
-
-
-
-
-
 
 !\[Convergence](plots/convergence\_plot.png)
 
 
-
-
-
-
-
 \*\*2. Variability Analysis\*\*
-
-
 
 These histograms compare different sample sizes. As $M$ grows (from Blue to Green), the distribution becomes narrower, showing that larger samples significantly reduce estimation error ].
 
 
-
-
-
-
-
 !\[Variability](plots/estimate\_histograms.png)
-
-
-
-
-
-
 
 \## Tech Stack
 
 
-
 &#x20; \*\*Language\*\*: R
-
 
 
 &#x20; \*\*Libraries\*\*: Base R (stats \\\& graphics)
@@ -153,18 +86,7 @@ These histograms compare different sample sizes. As $M$ grows (from Blue to Gree
 &#x20; \*\*Concepts\*\*: Monte Carlo Methods, Geometric Probability, Law of Large Numbers.
 
 
-
-
-
-
-
 \---
 
 
-
 \*\*Contact:\*\* \[samihnaien57@gmail.com]
-
-
-
-
-
